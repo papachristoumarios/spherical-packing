@@ -14,7 +14,7 @@ MYAPIKEY = 'Fmjtd%7Cluu82l01nd%2C22%3Do5-94zal6'
 #Area functions
 Scap(r,h) = 2*math.pi*h*(r+h)
 Ssphere(r,h) = 4*math.pi*(r+h)^2
-A(r,h,n) = Scap(r,h)*(n + \floor(Ssphere(r,h)/Scap(r,h))) - Ssphere(r,h)
+A(r,h,n) = Scap(r,h)*(n + floor(Ssphere(r,h)/Scap(r,h))) - Ssphere(r,h)
 
 def generate_weight_table(H, F, max_height):
 	assert (len(H) is len(F))
